@@ -77,6 +77,11 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
+        "CLIENT": {
+            'host': 'mongodb+srv://ronakvadodariya1909:ronak123@cluster0.it1vltd.mongodb.net/test',
+            'username': 'ronakvadodariya1909',
+            'password': 'ronak123',
+        }
     }
 }
 
