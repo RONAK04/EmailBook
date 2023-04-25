@@ -73,10 +73,17 @@ WSGI_APPLICATION = "email_book.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "djongo",
+        "NAME": 'mail_book',
         "CLIENT": {
             'host': 'mongodb+srv://ronakvadodariya1909:ronak123@cluster0.it1vltd.mongodb.net/test',
             'username': 'ronakvadodariya1909',
