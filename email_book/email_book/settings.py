@@ -83,7 +83,8 @@ WSGI_APPLICATION = "email_book.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "djongo",
+        "ENGINE":
+            "djongo",
         "NAME": 'mail_book',
         "CLIENT": {
             'host': 'mongodb+srv://ronakvadodariya1909:ronak123@cluster0.it1vltd.mongodb.net/test',
