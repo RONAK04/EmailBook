@@ -3,8 +3,8 @@ from django.db import models
 class User(models.Model):
     id = models.IntegerField(primary_key=True, blank=False, null=False)
     name = models.CharField(max_length=50,blank=True,null=True)
-    from_email = models.EmailField(max_length=254,blank=False,null=False)
-    to_email = models.EmailField(max_length=254,blank=False,null=False)
+    email = models.EmailField(max_length=254,blank=False,null=False)
+    company_name = models.EmailField(max_length=254,blank=False,null=False)
     company_website = models.CharField(max_length=100,blank=False,null=False)
     company_address = models.CharField(max_length=100,blank=False,null=False)
     city = models.CharField(max_length=50,blank=False,null=False)
